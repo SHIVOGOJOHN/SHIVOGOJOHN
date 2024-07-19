@@ -1,0 +1,4 @@
+﻿pillow
+streamlit_lottie
+requests
+streamlit

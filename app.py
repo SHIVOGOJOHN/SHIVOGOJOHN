@@ -115,7 +115,7 @@ with st.container():
     with text_column:
         st.header("Support Us! :star:")
         st.write("Your donation is highly appreciated.")
-        st.markdown(f'<a href={} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
+       # st.markdown(f'<a href={} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
         
 
 

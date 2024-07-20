@@ -1,8 +1,10 @@
+
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
 import json
+
 # Use local CSS
 def local_css(file_name):
     with open(file_name) as f:
@@ -25,6 +27,7 @@ img_contact_form = Image.open("images-18.jpeg")  # Path to image file
 img_contact_form1 = Image.open("images-17.jpeg")  # Path to image file
 img_contact = Image.open("images-19.jpeg")  # Path to image file
 
+# Welcome Section
 with st.container():
     image_column, text_column = st.columns((1, 2))
     with image_column:
@@ -32,7 +35,9 @@ with st.container():
     with text_column:
         st.subheader("Hi Welcome To Axis Consultants :wave:")
         st.title("Real world solutions from real world data.")
-        st.write("Are you ready to unlock the full potential of your data? As a company with professional data analysts and data science consultants, we are here to help you transform your raw data into actionable insights, driving your business toward unparalleled success. Our services are efficient and affordable but our esteemed clients get value for their money.")
+        st.write(
+            "Are you ready to unlock the full potential of your data? As a company with professional data analysts and data science consultants, we are here to help you transform your raw data into actionable insights, driving your business toward unparalleled success. Our services are efficient and affordable but our esteemed clients get value for their money."
+        )
 
 # What I do
 with st.container():
@@ -70,17 +75,17 @@ with st.container():
         st.header("WHY CHOOSE US?")
         st.write(
             """
-            **1.Expertise and Experience**
-            -With 6+ years of experience in the data science field, we have successfully helped 100+ businesses across various industries achieve their goals (an average 45% increase in sales) since 2018. Our professional team with a deep understanding of data analytics and machine learning ensures you receive the highest quality service.
+            **1. Expertise and Experience**
+            - With 6+ years of experience in the data science field, we have successfully helped 100+ businesses across various industries achieve their goals (an average 45% increase in sales) since 2018. Our professional team with a deep understanding of data analytics and machine learning ensures you receive the highest quality service.
 
-            **2.Customized Solutions**
-            -Every business is unique, and so are its data needs. We provide tailored solutions that align with your specific goals and challenges, ensuring maximum impact and ROI.
+            **2. Customized Solutions**
+            - Every business is unique, and so are its data needs. We provide tailored solutions that align with your specific goals and challenges, ensuring maximum impact and ROI.
 
-            **3.Cutting-Edge Technology**
-            Stay ahead of the curve with the latest tools and technologies in data science. From advanced machine learning models to real-time analytics platforms, we use state-of-the-art solutions to deliver the best results.
+            **3. Cutting-Edge Technology**
+            - Stay ahead of the curve with the latest tools and technologies in data science. From advanced machine learning models to real-time analytics platforms, we use state-of-the-art solutions to deliver the best results.
 
-            **4.Proven Track Record**
-            Don't just take our word for it—our clients' success stories speak volumes. From increasing sales and improving customer satisfaction to optimizing operations and reducing costs, we have a proven track record of delivering measurable results.
+            **4. Proven Track Record**
+            - Don't just take our word for it—our clients' success stories speak volumes. From increasing sales and improving customer satisfaction to optimizing operations and reducing costs, we have a proven track record of delivering measurable results.
             """
         )
         st.write("##")
@@ -148,8 +153,6 @@ def generate_payment_link(amount):
     approval_url = next(link['href'] for link in order['links'] if link['rel'] == 'approve')
     return approval_url
 
-
-
 # Projects
 with st.container():
     st.write("---")
@@ -160,7 +163,7 @@ with st.container():
         st.image(img_contact_form)
     with text_column:
         st.subheader("Real world data analysis projects.")
-        st.markdown("[Github  ...](https://github.com/SHIVOGOJOHN)")
+        st.markdown("[Github ...](https://github.com/SHIVOGOJOHN)")
 
 # Donations
 with st.container():
@@ -170,11 +173,9 @@ with st.container():
     with text_column:
         st.header("Support Us! :star:")
         st.write('**Your donation is highly appreciated**')
+        amount = 10  # Specify the amount here
         payment_link = generate_payment_link(amount)
-        st.markdown(f'<a href = {payment_link} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
-
-    
-        # st.markdown(f'<a href={} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
+        st.markdown(f'<a href={payment_link} class="button">👉 Donate here</a>', unsafe_allow_html=True)
 
 # Contact Info
 with st.container():
@@ -194,3 +195,5 @@ with st.container():
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
         st.empty()
+
+

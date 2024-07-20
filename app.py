@@ -31,7 +31,7 @@ with st.container():
     with image_column:
         st.image(img_contact_form1)
     with text_column:
-        st.subheader("Hi Welcome To Axis Consultants :wave:")
+        st.subheader("Hi Welcome To AxisDeta Consultants :wave:")
         st.title("Real world solutions from real world data.")
         st.write(
             "Are you ready to unlock the full potential of your data? As a company with professional data analysts and data science consultants, we are here to help you transform your raw data into actionable insights, driving your business toward unparalleled success. Our services are efficient and affordable but our esteemed clients get value for their money."

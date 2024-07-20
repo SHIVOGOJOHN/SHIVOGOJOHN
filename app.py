@@ -121,7 +121,7 @@ with st.container():
     with image_column:
         st.image(img_contact)
     with text_column:
-        st.header("Patronize Us! :star:")    
+        st.header("Thank You For Patronizing Us! :star:")    
 
 # Contact Info
 with st.container():

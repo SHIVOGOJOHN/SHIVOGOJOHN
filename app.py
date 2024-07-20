@@ -95,7 +95,7 @@ with st.container():
         )
         st.write("##")
         st.header("Contact Us:")
-        st.write("email: shivogojohn@gmail.com")
+        st.write("email: axisdeta@gmail.com")
         st.write("Or Call/Text: +254704234829")
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
@@ -129,7 +129,7 @@ with st.container():
     st.header("Any Questions? Shoot us a message!")
     st.write("##")
     contact_form = """
-    <form action="https://formsubmit.co/shivogojohn@gmail.com" method="POST">
+    <form action="https://formsubmit.co/axisdeta@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="True">
         <input type="text" name="name" required>
         <input type="email" name="email" required>

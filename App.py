@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
-
+import json
 # Use local CSS
 def local_css(file_name):
     with open(file_name) as f:
@@ -70,16 +70,16 @@ with st.container():
         st.header("WHY CHOOSE US?")
         st.write(
             """
-            **Expertise and Experience**
-            With 6+ years of experience in the data science field, we have successfully helped 100+ businesses across various industries achieve their goals (an average 45% increase in sales) since 2018. Our professional team with a deep understanding of data analytics and machine learning ensures you receive the highest quality service.
+            **1.Expertise and Experience**
+            -With 6+ years of experience in the data science field, we have successfully helped 100+ businesses across various industries achieve their goals (an average 45% increase in sales) since 2018. Our professional team with a deep understanding of data analytics and machine learning ensures you receive the highest quality service.
 
-            **Customized Solutions**
-            Every business is unique, and so are its data needs. We provide tailored solutions that align with your specific goals and challenges, ensuring maximum impact and ROI.
+            **2.Customized Solutions**
+            -Every business is unique, and so are its data needs. We provide tailored solutions that align with your specific goals and challenges, ensuring maximum impact and ROI.
 
-            **Cutting-Edge Technology**
+            **3.Cutting-Edge Technology**
             Stay ahead of the curve with the latest tools and technologies in data science. From advanced machine learning models to real-time analytics platforms, we use state-of-the-art solutions to deliver the best results.
 
-            **Proven Track Record**
+            **4.Proven Track Record**
             Don't just take our word for it—our clients' success stories speak volumes. From increasing sales and improving customer satisfaction to optimizing operations and reducing costs, we have a proven track record of delivering measurable results.
             """
         )
@@ -116,8 +116,69 @@ with st.container():
         st.image(img_contact)
     with text_column:
         st.header("Support Us! :star:")
-        st.write("Your donation is highly appreciated.")
+    
         # st.markdown(f'<a href={} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
+
+# PayPal credentials for the sandbox environment
+CLIENT_ID = 'ARlfacz_kwlmGbbXs2T8wJuetirk0CZjmEmOsg2iePHM0pITrZyTkjUmoK3uqGjAZtb7TG1QKwaAxhQf'
+SECRET = 'EAqyELUI-qGTXuifmK5Bezo-dEnYjuvETDjzU8JNkGirBTTsevbvUg_wZAeuCmwjDDiTwU6jpHshnDPL'
+
+# PayPal API URLs for the sandbox environment
+PAYPAL_API_URL = 'https://api.paypal.com'  # Use this URL for the sandbox
+AUTH_URL = f'{PAYPAL_API_URL}/v1/oauth2/token'
+CREATE_ORDER_URL = f'{PAYPAL_API_URL}/v2/checkout/orders'
+
+# Get OAuth 2.0 token
+def get_paypal_token(client_id, secret):
+    response = requests.post(
+        AUTH_URL,
+        headers={
+            'Accept': 'application/json',
+            'Accept-Language': 'en_US',
+        },
+        data={
+            'grant_type': 'client_credentials',
+        },
+        auth=(client_id, secret)
+    )
+    response.raise_for_status()
+    return response.json()['access_token']
+
+# Create PayPal order
+def create_paypal_order(token, amount, currency='USD'):
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {token}',
+    }
+    payload = {
+        'intent': 'CAPTURE',
+        'purchase_units': [{
+            'amount': {
+                'currency_code': currency,
+                'value': amount,
+            },
+        }],
+    }
+    response = requests.post(CREATE_ORDER_URL, headers=headers, json=payload)
+    response.raise_for_status()
+    return response.json()
+
+# Generate payment link
+def generate_payment_link(amount):
+    token = get_paypal_token(CLIENT_ID, SECRET)
+    order = create_paypal_order(token, amount)
+    approval_url = next(link['href'] for link in order['links'] if link['rel'] == 'approve')
+    return approval_url
+
+# Streamlit app
+st.write('**Your donation is highly appreciated**')
+
+amount = st.text_input('Enter Ammount:', '10.00')
+if st.button('PayPal>>'):
+    payment_link = generate_payment_link(amount)
+    st.write(f'PayPal👉: [Donate Now]({payment_link})')
+
+
 
 # Contact Info
 with st.container():

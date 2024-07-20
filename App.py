@@ -97,28 +97,6 @@ with st.container():
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
 
-# Projects
-with st.container():
-    st.write("---")
-    st.header("Side Projects")
-    st.write("##")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_contact_form)
-    with text_column:
-        st.subheader("Real world data analysis projects.")
-        st.markdown("[Github  ...](https://github.com/SHIVOGOJOHN)")
-
-# Donations
-with st.container():
-    image_column, text_column = st.columns((2, 1))
-    with image_column:
-        st.image(img_contact)
-    with text_column:
-        st.header("Support Us! :star:")
-    
-        # st.markdown(f'<a href={} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
-
 # PayPal credentials for the sandbox environment
 CLIENT_ID = 'ARlfacz_kwlmGbbXs2T8wJuetirk0CZjmEmOsg2iePHM0pITrZyTkjUmoK3uqGjAZtb7TG1QKwaAxhQf'
 SECRET = 'EAqyELUI-qGTXuifmK5Bezo-dEnYjuvETDjzU8JNkGirBTTsevbvUg_wZAeuCmwjDDiTwU6jpHshnDPL'
@@ -170,15 +148,33 @@ def generate_payment_link(amount):
     approval_url = next(link['href'] for link in order['links'] if link['rel'] == 'approve')
     return approval_url
 
-# Streamlit app
-st.write('**Your donation is highly appreciated**')
-
-amount = st.text_input('Enter Ammount:', '10.00')
-if st.button('PayPal>>'):
-    payment_link = generate_payment_link(amount)
-    st.write(f'PayPal👉: [Donate Now]({payment_link})')
 
 
+# Projects
+with st.container():
+    st.write("---")
+    st.header("Side Projects")
+    st.write("##")
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_contact_form)
+    with text_column:
+        st.subheader("Real world data analysis projects.")
+        st.markdown("[Github  ...](https://github.com/SHIVOGOJOHN)")
+
+# Donations
+with st.container():
+    image_column, text_column = st.columns((2, 1))
+    with image_column:
+        st.image(img_contact)
+    with text_column:
+        st.header("Support Us! :star:")
+        st.write('**Your donation is highly appreciated**')
+        payment_link = generate_payment_link(amount)
+        st.markdown(f'<a href = {payment_link} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
+
+    
+        # st.markdown(f'<a href={} class="button" 👉 Donate here </a>', unsafe_allow_html=True)
 
 # Contact Info
 with st.container():

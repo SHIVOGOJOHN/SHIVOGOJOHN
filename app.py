@@ -100,56 +100,8 @@ with st.container():
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
 
-# PayPal credentials for the sandbox environment
-CLIENT_ID = 'ARlfacz_kwlmGbbXs2T8wJuetirk0CZjmEmOsg2iePHM0pITrZyTkjUmoK3uqGjAZtb7TG1QKwaAxhQf'
-SECRET = 'EAqyELUI-qGTXuifmK5Bezo-dEnYjuvETDjzU8JNkGirBTTsevbvUg_wZAeuCmwjDDiTwU6jpHshnDPL'
 
-# PayPal API URLs for the sandbox environment
-PAYPAL_API_URL = 'https://api.paypal.com'  # Use this URL for the sandbox
-AUTH_URL = f'{PAYPAL_API_URL}/v1/oauth2/token'
-CREATE_ORDER_URL = f'{PAYPAL_API_URL}/v2/checkout/orders'
 
-# Get OAuth 2.0 token
-def get_paypal_token(client_id, secret):
-    response = requests.post(
-        AUTH_URL,
-        headers={
-            'Accept': 'application/json',
-            'Accept-Language': 'en_US',
-        },
-        data={
-            'grant_type': 'client_credentials',
-        },
-        auth=(client_id, secret)
-    )
-    response.raise_for_status()
-    return response.json()['access_token']
-
-# Create PayPal order
-def create_paypal_order(token, amount, currency='USD'):
-    headers = {
-        'Content-Type': 'application/json',
-        'Authorization': f'Bearer {token}',
-    }
-    payload = {
-        'intent': 'CAPTURE',
-        'purchase_units': [{
-            'amount': {
-                'currency_code': currency,
-                'value': amount,
-            },
-        }],
-    }
-    response = requests.post(CREATE_ORDER_URL, headers=headers, json=payload)
-    response.raise_for_status()
-    return response.json()
-
-# Generate payment link
-def generate_payment_link(amount):
-    token = get_paypal_token(CLIENT_ID, SECRET)
-    order = create_paypal_order(token, amount)
-    approval_url = next(link['href'] for link in order['links'] if link['rel'] == 'approve')
-    return approval_url
 
 # Projects
 with st.container():
@@ -169,11 +121,7 @@ with st.container():
     with image_column:
         st.image(img_contact)
     with text_column:
-        st.header("Support Us! :star:")
-        st.write('**Your donation is highly appreciated**')
-        amount = 10  # Specify the amount here
-        payment_link = generate_payment_link(amount)
-        st.markdown(f'<a href="{payment_link}" class="button">👉 Donate here</a>', unsafe_allow_html=True)
+        st.header("Patronize Us! :star:")    
 
 # Contact Info
 with st.container():

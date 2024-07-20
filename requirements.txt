@@ -2,3 +2,4 @@
 streamlit_lottie
 requests
 streamlit
+json

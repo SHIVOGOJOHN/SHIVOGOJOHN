@@ -152,7 +152,6 @@
     </a>
 </p>
 
-</a>
 ---
 
 <h3 align="left">Support:</h3>

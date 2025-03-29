@@ -1,5 +1,8 @@
-<h1 align="center">Hi 👋, I'm John Shivogo</h1>
+<h1 align="center">Hi 👋, I'm John </h1>
+
 <h3 align="center">A passionate Machine Learning Engineer and Data Engineer</h3>
+
+---
 
 - 🔭 I’m currently working on **Deep Learning Algorithms, AI agents**
 

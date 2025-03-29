@@ -4,15 +4,15 @@
 
 ---
 
-- 🔭 I’m currently working on **Deep Learning Algorithms, AI agents**
+- 🔭 I’m currently working on **Deep Learning Algorithms and AI agents.**
 
-- 🌱 I’m currently learning **Reinforcement Learning, Deep Learning, AWS**
+- 🌱 I’m currently learning **Reinforcement Learning, Deep Learning and MLOps.**
 
-- 👯 I’m looking to collaborate on **Machine Learning and AI Projects**
+- 👯 I’m looking to collaborate on **Machine Learning and AI Projects.**
 
 - 👨‍💻 All of my projects are available at [https://github.com/SHIVOGOJOHN](https://github.com/SHIVOGOJOHN)
 
-- 💬 Ask me about **Python, Deep Learning, Big Data.**
+- 💬 Ask me about **Python, Deep Learning and Big Data.**
 
 - 📫 How to reach me **shivogojohn@gmail.com**
 

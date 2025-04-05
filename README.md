@@ -145,11 +145,11 @@
     <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
         <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="margin: 10px;" />
     </a>
-    <a href="https://zapier.com" target="_blank" rel="noreferrer">
-    <a href="https://zapier.com" target="_blank" rel="noreferrer">
-        <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40" style="margin: 10px;" />
+<a href="https://zapier.com" target="_blank" rel="noreferrer">
+        <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/zapier_logo_icon_168809.png" alt="zapier" width="40" height="40" style="margin: 10px;" />
     </a>
 </p>
+
 
 ---
 <h3 align="left">Support:</h3>

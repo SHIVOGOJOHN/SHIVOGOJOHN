@@ -149,6 +149,7 @@
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/zapier/zapier-original.svg" alt="zapier" width="40" height="40" style="margin: 10px;" />
     </a>
 </p>
+
 ---
 <h3 align="left">Support:</h3>
 <p><a href="https://ko-fi.com/shivogojohn"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="shivogojohn" /></a></p><br><br>

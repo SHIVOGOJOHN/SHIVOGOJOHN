@@ -32,8 +32,6 @@
 </p>
 
 ---
-
-
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
     <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
@@ -124,7 +122,7 @@
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" style="margin: 10px;" />
     </a>
     <a href="https://postman.com" target="_blank" rel="noreferrer">
-        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40" style="margin: 10px;" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" alt="postman" width="40" height="40" style="margin: 10px;" />
     </a>
     <a href="https://www.python.org" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" style="margin: 10px;" />
@@ -142,16 +140,15 @@
         <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40" style="margin: 10px;" />
     </a>
     <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
-        <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40" style="margin: 10px;" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" alt="sqlite" width="40" height="40" style="margin: 10px;" />
     </a>
     <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
         <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="margin: 10px;" />
     </a>
     <a href="https://zapier.com" target="_blank" rel="noreferrer">
-        <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40" style="margin: 10px;" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/zapier/zapier-original.svg" alt="zapier" width="40" height="40" style="margin: 10px;" />
     </a>
 </p>
-
 ---
 <h3 align="left">Support:</h3>
 <p><a href="https://ko-fi.com/shivogojohn"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="shivogojohn" /></a></p><br><br>

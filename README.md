@@ -146,7 +146,8 @@
         <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="margin: 10px;" />
     </a>
     <a href="https://zapier.com" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/zapier/zapier-original.svg" alt="zapier" width="40" height="40" style="margin: 10px;" />
+    <a href="https://zapier.com" target="_blank" rel="noreferrer">
+        <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40" style="margin: 10px;" />
     </a>
 </p>
 

@@ -1,12 +1,12 @@
 <h1 align="center">Hi 👋, I'm John </h1>
 
-<h3 align="center">A passionate Machine Learning Engineer and Data Engineer</h3>
+<h3 align="center">A dedicated Machine Learning Engineer, Data Engineer and Backend Developer</h3>
 
 ---
 
 - 🔭 I’m currently working on **Deep Learning Algorithms and AI agents.**
 
-- 🌱 I’m currently learning **Reinforcement Learning, Deep Learning and MLOps.**
+- 🌱 I’m currently learning **Reinforcement Learning, Deep Learning, Backend Development, and MLOps.**
 
 - 👯 I’m looking to collaborate on **Machine Learning and AI Projects.**
 

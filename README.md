@@ -8,7 +8,7 @@
 
 - 👯 I’m looking to collaborate on **Machine Learning and AI Projects.**
 
-- 👨‍💻 All of my projects are available at [https://github.com/SHIVOGOJOHN](https://shivogojohn.onrender.com)
+- 👨‍💻 All of my projects are available at [SHIVOGOJOHN](https://shivogojohn.onrender.com)
 
 - 💬 Ask me about **Python, Deep Learning, and Big Data.**
 

@@ -1,12 +1,12 @@
-<h1 align="center">Hi 👋, I'm John </h1>
+<h1 align="center">Hi 👋, I'm John</h1>
 
 <h3 align="center">A dedicated Machine Learning Engineer, Data Engineer and Backend Developer</h3>
 
 ---
 
-- 🔭 I’m currently working on **Deep Learning Algorithms.**
+- 🔭 I'm currently working on **Deep Learning Algorithms.**
 
-- 👯 I’m looking to collaborate on **Machine Learning and AI Projects.**
+- 👯 I'm looking to collaborate on **Machine Learning and AI Projects.**
 
 - 👨‍💻 All of my projects are available at [JOHN](https://johnshivogo.onrender.com)
 
@@ -15,6 +15,7 @@
 - 📫 How to reach me **shivogojohn@gmail.com**
 
 ---
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://dev.to/shivogojohn" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="shivogojohn" height="30" width="40" /></a>
@@ -23,6 +24,7 @@
 </p>
 
 ---
+
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
     <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
@@ -136,21 +138,41 @@
     <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
         <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" style="margin: 10px;" />
     </a>
-<a href="https://zapier.com" target="_blank" rel="noreferrer">
-    <img src="https://cdn.simpleicons.org/zapier/000000" alt="Zapier" width="40" height="40" style="margin: 10px;" />
-</a>
-
-
+    <a href="https://zapier.com" target="_blank" rel="noreferrer">
+        <img src="https://cdn.simpleicons.org/zapier/000000" alt="Zapier" width="40" height="40" style="margin: 10px;" />
+    </a>
+</p>
 
 ---
+
 <h3 align="left">Support:</h3>
 <p><a href="https://ko-fi.com/shivogojohn"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="shivogojohn" /></a></p><br><br>
 
 ---
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=shivogojohn&show_icons=true&locale=en&layout=compact" alt="shivogojohn" /></p><br><br>
+<h3 align="left">GitHub Stats:</h3>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shivogojohn&show_icons=true&locale=en" alt="shivogojohn" /></p><br><br>
+<p>
+  <img align="left" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shivogojohn&theme=default" alt="Top Languages by Repo" />
+  <img align="left" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shivogojohn&theme=default" alt="Top Languages by Commit" />
+</p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shivogojohn&" alt="shivogojohn" /></p>
+<br clear="left"/>
+
+<p>
+  <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shivogojohn&theme=default" alt="GitHub Stats" />
+  <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shivogojohn&theme=default&utcOffset=3" alt="Productive Time" />
+</p>
+
+<br/>
+
+<p>
+  <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shivogojohn&theme=default" alt="Profile Details" />
+</p>
+
+<br/>
+
+<p>
+  <img align="center" src="https://streak-stats.demolab.com/?user=shivogojohn&theme=default" alt="GitHub Streak" />
+</p>
 

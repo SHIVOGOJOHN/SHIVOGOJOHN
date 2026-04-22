@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm John</h1>
 
-<h3 align="center">A dedicated Machine Learning | AI Engineer </h3>
+<h3 align="center">Machine Learning | AI Engineer | Data Engineer</h3>
 
 ---
 
